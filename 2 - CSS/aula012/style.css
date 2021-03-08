@@ -1,0 +1,90 @@
+body {
+    background: rgb(202, 199, 199);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(34, 34, 34);
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.foto-principal {
+    width: 200px;
+    border: 2px solid rgb(255, 255, 255); /* shorthand */
+    border-radius: 50%;
+    margin: 30px 30px 0 30px;
+    box-shadow: 2px 2px 2px black;
+   
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    letter-spacing: -1px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 0;
+    font-style: italic;
+    color: rgb(73, 73, 73);
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+p {
+    line-height: 25px;
+    margin-top: 0;
+}
+
+.socialicon {
+    width: 20px;
+}
+
+.sociallink {
+    text-decoration: none;
+}
+
+.github {
+    margin: 0 10px;
+}
+
+.linkedin {
+    margin-right: 10px;
+}
+
+.jobslist {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contato {
+    margin-left: 20px;
+}
