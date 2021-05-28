@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: rgb(54,77,204);
+    background: linear-gradient(175deg, rgba(54,77,204,1) 0%, rgba(10,18,62,1) 100%);
+    color: white;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    justify-content: space-evenly;
+}
+
+.social img {
+    width: 30px;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-family: 'Akaya Telivigala', cursive;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin: 20px 10px;
+}
+
+.links-list li a {
+    background: white;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(54,77,204);
+    font-weight: bold;
+    font-family: garamond;
+    box-sizing: border-box;
+    height: 75px;
+}
+
+.links-list li a span {
+    display: block;
+    margin-top: 10px;
+    color: gray;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: darkblue;
+    border-radius: 10px;
+}
+
