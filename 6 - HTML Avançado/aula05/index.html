@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="salvar.html" method="GET">
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+
+            <label for="">Nome:</label>
+            <input name="nome" type="text" placeholder="Digite o seu nome">
+            <br><br>
+
+            <label for="">Email:</label>
+            <input name="email" type="email" placeholder="Digite seu e-mail">
+            <br><br>
+
+            <label for="">Senha:</label>
+            <input name="senha" type="password" placeholder="Digite sua senha">
+            <br><br>
+
+            <input name="cor" type="color">
+            <br><br>
+
+            <label>Sexo:</label>
+            <br>
+
+            <input name="sex" type="radio" value="masc"> <label>Masculino</label>
+            <input name="sex" type="radio" value="fem"> <label>Feminino</label>
+            <br><br>
+
+            <label>Habilidades</label>
+            <br>
+            <input name="habilidades" type="checkbox" value="html" id="html"> <label for="html">HTML</label>
+            <br>
+            <input name="habilidades" type="checkbox" value="css" id="css"> <label for="css">CSS</label>
+            <br>
+            <input name="habilidades" type="checkbox" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
+            <br><br>
+
+            <label>Cidade:</label>
+            <br>
+            <select name="cidade">
+                <option selected value="">-- Selecione --</option> <!-- Para nao ficar nenhuma cidade marcada, cria-se o option sem valor. o atributo selected pode ser colocado em qualquer option que ela será a primeira a aparecer na caixa. -->
+                <option value="São Paulo">Sao Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Recife">Recife</option>
+            </select>
+            <br><br>
+
+            <label>Carro:</label>
+            <br>
+            <select name="carro">
+                <optgroup label="Honda">
+                    <option value="Civic">Civic</option>
+                    <option value="HRV">HRV</option>
+                </optgroup>
+                <optgroup label="GM">
+                    <option value="Celta">Celta</option>
+                    <option value="Onix">Onix</option>
+                </optgroup>
+                <optgroup label="Fiat">
+                    <option value="Uno">Uno</option>
+                    <option value="Siena">Siena</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <label>Digite sua fruta preferida:</label>
+            <input type="text" name="frutas" placeholder="Digite sua Fruta" list="listaFrutas">
+            <datalist id="listaFrutas">
+                <option value="Abacate">
+                <option value="Abacaxi">
+                <option value="Açai">
+                <option value="Acerola">
+            </datalist>
+            <br><br>
+
+            <label>Digite uma mensagem:</label>
+            <br>
+            <textarea name="mensagem" id="" cols="100" rows="10"></textarea>
+            <br><br>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

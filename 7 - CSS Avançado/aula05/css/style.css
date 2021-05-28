@@ -1,0 +1,20 @@
+body {
+    margin: 100px;
+}
+
+.box {
+    width: 300px;  
+    height: 300px;
+    background-color: black; /*
+    transition-property: width background-color; /* o padrao eh all 
+    transition-duration: 500ms; / EH BOA PRATICA UTILIZAR MILISEGUNDOS 
+    transition-timing-function: cubic-bezier(1,-0.58, 0, 1.44);
+    transition-delay: 500ms;*/
+
+    transition: width 500ms cubic-bezier(1,-0.58, 0, 1.44) 100ms; /* shorthand */
+ }
+
+ .box:hover {
+     width: 500px;
+     background-color: red;
+ }
