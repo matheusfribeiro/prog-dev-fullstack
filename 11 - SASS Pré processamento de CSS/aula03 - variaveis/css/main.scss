@@ -1,0 +1,71 @@
+
+
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'extends';
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+    .box { 
+        width: 30%;
+        color: $color-primary;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+
+        &.active {  /* quando for irmao, faz a indentaçao do filho, porém com um & na frente pra indicar a irmandade. */
+            background-color: $color-secondary;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 10px 20px 30px 20px;
+        }
+
+        p {
+            font-size: 18px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        ul {
+            @include reset-list(100px, 10px, square);
+        }
+
+        a {
+            color: green;
+
+            &:hover {
+                color: yellow;
+
+                & + p.hidden {
+                    display: block;
+                }    
+            }
+        }
+
+        .success {
+            @extend %box-warning;
+            @include bg-effect(success);
+        }
+
+        .danger {
+            @extend %box-warning;
+            @include bg-effect(danger);
+        }
+
+        .warning {
+            @extend %box-warning;
+            @include bg-effect(warning);
+        }
+    } 
+}
