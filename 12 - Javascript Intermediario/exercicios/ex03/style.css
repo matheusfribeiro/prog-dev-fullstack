@@ -1,0 +1,20 @@
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#labelCidade {
+  display: none;
+}
+#labelCidade.cidadeOpen {
+  display: block;
+}
+
+.inputError {
+  border: solid 2px red;
+}
+
+.erro {
+  color: red;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
